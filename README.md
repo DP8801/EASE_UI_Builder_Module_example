@@ -1221,3 +1221,5 @@ The module can be found at `Help > Help Contents > Scripting User Guide > Refere
 
 This project Utilizes `UI`, `UI Builder` and `Resources` modules and provide user the an idea of what could be done using the EASE and encourages them to explore more of this.
 
+- Mini Project File: [PyDevFileCreator](PyDevFileCreator.py)
+- Mini Project readme: [README.md](PyDevFileCreator.py)
