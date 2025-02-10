@@ -113,15 +113,15 @@ The module can be found at `Help > Help Contents > Scripting User Guide > Refere
   
   Grid | No Grid
   ---- | -------
-  ![alt text](image-4.png) | ![alt text](image-2.png)
+  ![alt text](resources\image-4.png) | ![alt text](resources\image-2.png)
 
   **explanation**
   
-  - The method `createLabel()` and any methods in any EASE module, needs to be defined (not a compulsion ) before it is being used in the code to avoid: ![alt text](image-18.png)
+  - The method `createLabel()` and any methods in any EASE module, needs to be defined (not a compulsion ) before it is being used in the code to avoid: ![alt text](resources\image-18.png)
   
     and make sure to place the empty method defintion before `loadModule('/System/<EASE module>')`.
 
-  - you notice that `________Reference Label___________` was solely meant to increase the width of the cell as by default the cell in the grid take the width of the text e.g. ![alt text](image-11.png), hence to show the effect of *alignment*, `________Reference Label___________` was created.
+  - you notice that `________Reference Label___________` was solely meant to increase the width of the cell as by default the cell in the grid take the width of the text e.g. ![alt text](resources\image-11.png), hence to show the effect of *alignment*, `________Reference Label___________` was created.
 
   Adding the below given code above `showGrid()`:
 
@@ -138,7 +138,7 @@ The module can be found at `Help > Help Contents > Scripting User Guide > Refere
 
   Grid | No Grid
   ---- | -------
-  ![alt text](image-1.png) | ![alt text](image-5.png)
+  ![alt text](resources\image-1.png) | ![alt text](resources\image-5.png)
   **explaination** | `setColumnCount(5)` was called after the Label(right align) hence elements before that followed single column and Label1, Label2, ... followed column count = 5 and `showGrid()` shows the `X/Y` coordinates of the empty cell.
 
   Following more on the example at hand, update the `createLabel()` below the `setColumnCount(5)` with the following code:
@@ -155,15 +155,15 @@ The module can be found at `Help > Help Contents > Scripting User Guide > Refere
 
   Grid | No Grid
   ---- | -------
-  ![alt text](image-6.png) | ![alt text](image-7.png)
+  ![alt text](resources\image-6.png) | ![alt text](resources\image-7.png)
 
   *explanation:*
 
   Layout | Image | Description
   ------ | ----- | -----------
-  "4-5/1 >" | ![alt text](image-8.png) | Covers 4 to 5 column of first row with *right* alignment.
-  "3-5/2-3 x x" | ![alt text](image-9.png) | covers 3-5 columns and 2-3 row, *center align horizontally* and *center align vertically*.
-  "2/1-3 o x" | ![alt text](image-10.png) | covers 2 column and 1-4 rows, *applying fill horizontally* and *center align vertically*.
+  "4-5/1 >" | ![alt text](resources\image-8.png) | Covers 4 to 5 column of first row with *right* alignment.
+  "3-5/2-3 x x" | ![alt text](resources\image-9.png) | covers 3-5 columns and 2-3 row, *center align horizontally* and *center align vertically*.
+  "2/1-3 o x" | ![alt text](resources\image-10.png) | covers 2 column and 1-4 rows, *applying fill horizontally* and *center align vertically*.
 
   Updating the code between `setColumnCount(5)` and `showgrid()` with the below code:
 
@@ -179,13 +179,13 @@ The module can be found at `Help > Help Contents > Scripting User Guide > Refere
 
   Before update | After update
   ---- | -------
-  ![alt text](image-12.png) | ![alt text](image-15.png)
+  ![alt text](resources\image-12.png) | ![alt text](resources\image-15.png)
 
   *explanation:*
 
   Layout | Image | Description
   ------ | ----- | -----------
-  "2/1-3 o o!" | ![alt text](image-16.png) | `o!` in the vertical alignment will grab entire vertical space.
+  "2/1-3 o o!" | ![alt text](resources\image-16.png) | `o!` in the vertical alignment will grab entire vertical space.
   
   Further updating the code:
 
@@ -201,7 +201,7 @@ The module can be found at `Help > Help Contents > Scripting User Guide > Refere
 
   Before update | After update
   ---- | -------
-  ![alt text](image-15.png) | ![alt text](image-17.png)
+  ![alt text](resources\image-15.png) | ![alt text](resources\image-17.png)
   **explanation** | `o!` in label5 is taking all the horizontal region.
 
   I hope this exercise is good first example to get started with the `UI Builder` module.
@@ -255,7 +255,7 @@ The module can be found at `Help > Help Contents > Scripting User Guide > Refere
 
       View Point | Console
       ---------- | -------
-      ![alt text](image-19.png) | ![alt text](image-20.png)
+      ![alt text](resources\image-19.png) | ![alt text](resources\image-20.png)
       Explanation | Whenever the user clicks `Button`, `print()` is triggerred and that print *"Button Pressed"* in console
 
       **Example 2** : external Callback
@@ -279,7 +279,7 @@ The module can be found at `Help > Help Contents > Scripting User Guide > Refere
 
       View Point | Console
       ---------- | -------
-      ![alt text](image-19.png) | ![alt text](image-21.png)
+      ![alt text](resources\image-19.png) | ![alt text](resources\image-21.png)
       Explanation | a callback `greet()` is triggered when the user press the button.
 
       **Example 3** : passing parameter to callback
@@ -306,7 +306,7 @@ The module can be found at `Help > Help Contents > Scripting User Guide > Refere
 
       View Point | Console
       ---------- | -------
-      ![alt text](image-19.png) | ![alt text](image-22.png)
+      ![alt text](resources\image-19.png) | ![alt text](resources\image-22.png)
       Explanation | This shows that callback function could be passed a parameter.
 
   2. ##### `createCheckBox()`
@@ -345,7 +345,7 @@ The module can be found at `Help > Help Contents > Scripting User Guide > Refere
 
       View Point | Console
       ---------- | -------
-      ![alt text](image-23.png) | ![alt text](image-24.png)
+      ![alt text](resources\image-23.png) | ![alt text](resources\image-24.png)
       `CheckBox` checked ✅ | callback() is triggered and `Checkbox selected` is printed.
       `CheckBox` unchecked | callback() is triggered and `Checkbox unselected` is printed.
 
@@ -382,7 +382,7 @@ The module can be found at `Help > Help Contents > Scripting User Guide > Refere
 
       View Point | Console
       ---------- | -------
-      ![alt text](image-25.png)| ![alt text](image-26.png)
+      ![alt text](resources\image-25.png)| ![alt text](resources\image-26.png)
       Explanation | When program run `combo_instance` is created and will call `print()` function and will print the first line in the console image. Later selecting any alphabet and pressing submit will call `callback()` function, which take the `combo_instance` and and access the selected alphabet in the list through `getSelection().getFirstElement()` there are more functions to the comboViewer instance which could be found in the official document.
 
   4. ##### `createProgressBar()`
@@ -426,7 +426,7 @@ The module can be found at `Help > Help Contents > Scripting User Guide > Refere
 
       View Point
 
-      ![alt text](image-27.png)
+      ![alt text](resources\image-27.png)
 
       **Explanation**
       `progress_bar` is a progressbar instance created by `createProgressBar()`, and this instance is used by the `callback()` function, it if `Progress++` button is pressed it increase the progressbar by 20 points and it is reduced by 20 if `Progress--` is pressed.
@@ -465,9 +465,9 @@ The module can be found at `Help > Help Contents > Scripting User Guide > Refere
 
       View Point | Console
       ---------- | -------
-      ![alt text](image-28.png)| ![alt text](image-29.png)
-      ![alt text](image-30.png)| `radioCallback()` is triggered and print statement is executed.
-      ![alt text](image-31.png)| `buttonCallback()` is triggered and the `Radio` will be cleared if it is selected
+      ![alt text](resources\image-28.png)| ![alt text](resources\image-29.png)
+      ![alt text](resources\image-30.png)| `radioCallback()` is triggered and print statement is executed.
+      ![alt text](resources\image-31.png)| `buttonCallback()` is triggered and the `Radio` will be cleared if it is selected
   
   6. ##### `createText()`
 
@@ -501,7 +501,7 @@ The module can be found at `Help > Help Contents > Scripting User Guide > Refere
 
       View Point | Console
       ---------- | -------
-      ![alt text](image-32.png)| ![alt text](image-33.png)
+      ![alt text](resources\image-32.png)| ![alt text](resources\image-33.png)
       Explanation | Clicking Submit after entering name in the text field triggers `callback()` which takes text field instance as parameter and print the name type in the field in the console using getText() method of the text instance (found in the official doc)
   
   7. ##### `createTextBox()`
@@ -535,7 +535,7 @@ The module can be found at `Help > Help Contents > Scripting User Guide > Refere
 
       View Point | Console
       ---------- | -------
-      ![alt text](image-34.png)| ![alt text](image-35.png)
+      ![alt text](resources\image-34.png)| ![alt text](resources\image-35.png)
       Explanation | Clicking Submit after entering name in the text field triggers `callback()` which takes text field instance as parameter and print the name type in the field in the console using `getTextBox()` method of the text instance (found in the official doc).
       --- | Here we are utilizing string layout discussed in the [Usage](#1-usage) section
 
@@ -576,7 +576,7 @@ The module can be found at `Help > Help Contents > Scripting User Guide > Refere
 
       View Point
 
-      ![alt text](image-36.png)
+      ![alt text](resources\image-36.png)
 
       Explanation
 
@@ -650,7 +650,7 @@ The module can be found at `Help > Help Contents > Scripting User Guide > Refere
 
     **Output**:
 
-    ![alt text](image-38.png)
+    ![alt text](resources\image-38.png)
 
     **Explanation**
 
@@ -658,7 +658,7 @@ The module can be found at `Help > Help Contents > Scripting User Guide > Refere
 
     **Problem**
 
-    ![alt text](image-39.png)
+    ![alt text](resources\image-39.png)
 
     When we squeeze the view a bit then UI element in the bottom disappears and can't be accessed at all, to overcome this problem  [ScrolledComposite()](#createscrolledcomposite) is used.
   
@@ -704,7 +704,7 @@ The module can be found at `Help > Help Contents > Scripting User Guide > Refere
 
       **Output**:
 
-      ![alt text](image-40.png)
+      ![alt text](resources\image-40.png)
 
       **Explanation**:
 
@@ -748,7 +748,7 @@ The module can be found at `Help > Help Contents > Scripting User Guide > Refere
 
       **Output**:
 
-      ![alt text](image-41.png)
+      ![alt text](resources\image-41.png)
 
       **Explanation**:
 
@@ -797,7 +797,7 @@ The module can be found at `Help > Help Contents > Scripting User Guide > Refere
 
       **Output**:
 
-      ![alt text](image-45.png)
+      ![alt text](resources\image-45.png)
 
       **Explanation**
       Once group is created all the UI element add after the `createGroup()` method will remain in the group to get out of the group use `popComposite()`.
@@ -866,7 +866,7 @@ The module can be found at `Help > Help Contents > Scripting User Guide > Refere
 
       **Output**:
 
-      ![alt text](image-42.png)
+      ![alt text](resources\image-42.png)
 
       **Explanation**:
 
@@ -898,7 +898,7 @@ The module can be found at `Help > Help Contents > Scripting User Guide > Refere
       ```
 
       **Output**:
-      ![alt text](image-46.png)
+      ![alt text](resources\image-46.png)
 
       *Even after providing the icon url icon was not displayed need to look into it.*
 
@@ -910,7 +910,7 @@ The module can be found at `Help > Help Contents > Scripting User Guide > Refere
 
       **Output**:
 
-      ![alt text](image-47.png)
+      ![alt text](resources\image-47.png)
 
       Here as the relative reference to the left(`<`) was given to the `PyDevFilecreation` viewpoint which was already running, hence our `Dummy` viewpoint was created on the left of it.
 
@@ -938,7 +938,7 @@ The module can be found at `Help > Help Contents > Scripting User Guide > Refere
 
       View Point | Console
       ---------- | -------
-      ![alt text](image-48.png) | ![alt text](image-49.png)
+      ![alt text](resources\image-48.png) | ![alt text](resources\image-49.png)
       Explanation | The highlighted elements in the list `apple, cherry and elderberry` are the selected and when submit button is pressed it will call the `callback()` method and get the selected elements from the `ListViewerInstance` object.
       == | `getSelection()` is the method of the ListViewerInstance more details regarding it is in the [official documentation](#official-documentation)
 
@@ -973,7 +973,7 @@ The module can be found at `Help > Help Contents > Scripting User Guide > Refere
 
       View Point | Console
       ---------- | -------
-      ![alt text](image-50.png) | ![alt text](image-51.png)
+      ![alt text](resources\image-50.png) | ![alt text](resources\image-51.png)
       Explanation | The highlighted elements in the table `elderberry` is the selected and when submit button is pressed it will call the `callback()` method and get the selected elements from the `table_viewer_instance1` object.
       == | `getSelection()` is the method of the ListViewerInstance more details regarding it is in the [official documentation](#official-documentation)
 
@@ -1025,7 +1025,7 @@ The module can be found at `Help > Help Contents > Scripting User Guide > Refere
 
       **Output**:
 
-      ![alt text](image-53.png)
+      ![alt text](resources\image-53.png)
 
       **Explanation**:
 
@@ -1072,7 +1072,7 @@ The module can be found at `Help > Help Contents > Scripting User Guide > Refere
     **Output**:
     View Point | Console
     ---------- | -------
-    ![alt text](image-55.png) | ![alt text](image-56.png)
+    ![alt text](resources\image-55.png) | ![alt text](resources\image-56.png)
     Explanation | When program is run a dialog pops up asking user to enter name, when pressed `Ok` or `Cancel` dialog disappears and we can get the Data of that text field by `dialog.getData()`.
     Usecase | In the base UI if we want user to select something and get the selected elements back we can use `createDialog()` method.
 
@@ -1153,7 +1153,7 @@ The module can be found at `Help > Help Contents > Scripting User Guide > Refere
 
       **With** `setColumnCount()` | **Without** `setColumnCount()`
       ------------------------- | ---------------------------
-      ![alt text](image-57.png) | ![alt text](image-58.png)
+      ![alt text](resources\image-57.png) | ![alt text](resources\image-58.png)
 
 
   - ##### `showGrid()`
@@ -1184,7 +1184,7 @@ The module can be found at `Help > Help Contents > Scripting User Guide > Refere
 
       **With** `showGrid()()` | **Without** `showGrid()`
       ------------------------- | ---------------------------
-      ![alt text](image-57.png) | ![alt text](image-59.png)
+      ![alt text](resources\image-57.png) | ![alt text](resources\image-59.png)
 
   - ##### `createSeparator()`
 
@@ -1213,7 +1213,7 @@ The module can be found at `Help > Help Contents > Scripting User Guide > Refere
 
       **Output**:
 
-      ![alt text](image-60.png)
+      ![alt text](resources\image-60.png)
 
 ### 3. Mini Project
 
